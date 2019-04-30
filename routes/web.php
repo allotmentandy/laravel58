@@ -18,3 +18,4 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::view('/twitter', 'tailwind_twitter');
