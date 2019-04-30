@@ -1,6 +1,12 @@
 ## laravel 5.8 with tailwind 
 
-this is a demo project
+This is a demo project using [tailwind css present](https://github.com/laravel-frontend-presets/tailwindcss) with laravel 5.8
 
-- [using tailwind css present](https://github.com/laravel-frontend-presets/tailwindcss).
+### Aims
+- Experiments with tailwind css eg. /twitter
+
+
+### Ideas
+-  try using mongo db
+-  repository pattern for testing
 
