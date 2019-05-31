@@ -22,22 +22,30 @@
                             {{ config('app.name', 'Laravel') }}
                         </a>
                     </div>
-                    <div class="flex-1 text-right">
+                    
                         @guest
+                        <div class="flex-1 text-right">
                             <a class="no-underline hover:underline text-grey-lightest text-sm p-3" href="{{ route('login') }}">{{ __('Login') }}</a>
                             <a class="no-underline hover:underline text-grey-lightest text-sm p-3" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </div>
                         @else
-                            <span class="text-grey-lightest text-sm pr-4">{{ Auth::user()->name }}</span>
-
-                            <a href="{{ route('logout') }}"
-                               class="no-underline hover:underline text-grey-lightest text-sm p-3"
-                               onclick="event.preventDefault();
-                                    document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
-                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
-                                {{ csrf_field() }}
-                            </form>
+                        <div class="flex-1 text-right">
+                            <div class="dropdown">
+                                <button class="dropbtn">{{ Auth::user()->name }}</button>
+                                <div class="dropdown-content text-left">
+                                    <a href="#">Link 1</a>
+                                    <a href="/map">Map</a>
+                                    <a href="{{ route('logout') }}"
+                                       onclick="event.preventDefault();
+                                            document.getElementById('logout-form').submit();">{{ __('Logout') }}</a>
+                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="hidden">
+                                        {{ csrf_field() }}
+                                    </form>
+                                </div>
+                            </div> 
+                        </div>
                         @endguest
-                    </div>
+                    
                 </div>
             </div>
         </nav>
