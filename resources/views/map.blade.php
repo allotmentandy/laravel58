@@ -13,15 +13,15 @@
             <div class="flex flex-col break-words bg-white border border-2 rounded shadow-md">
 
                 <div class="font-semibold bg-grey-lightest text-grey-darkest py-3 px-6 mb-0 shadow-inner">
-                    Maps
+                    Open Street Map - Chiswick
                 </div>
 
                 <div class="w-full p-6">
                     <p class="text-grey-darkest">
                         @map([
-                            'lat' => '50.134664',
-                            'lng' => '0.555220',
-                            'zoom' => '6',
+                            'lat' => '51.4923',
+                            'lng' => '-0.2639',
+                            'zoom' => '15',
                         ])
                     </p>
                 </div>
