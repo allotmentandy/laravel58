@@ -11,12 +11,19 @@
 |
 */
 
+Route::get('/static', 'GithubController@index');
+Route::get('/laravel', 'GithubController@laravel');
+Route::get('/tailwind', 'GithubController@tailwind');
+Route::get('/gardening', 'GithubController@gardening');
+Route::get('/london', 'GithubController@london');
+
 Route::get('/', function () {
     return view('home');
 });
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/home2', 'HomeController@index')->name('home2');
 
 Route::get('/map', 'MapController@index')->name('map');
 

@@ -13,7 +13,8 @@
         "gonoware/laravel-maps": "^1.0",
         "laravel-frontend-presets/tailwindcss": "^0.7.1",
         "laravel/framework": "5.8.*",
-        "laravel/tinker": "^1.0"
+        "laravel/tinker": "^1.0",
+        "writingink/wink": "^0.0.13"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",
